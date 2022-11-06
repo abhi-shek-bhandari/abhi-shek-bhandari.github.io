@@ -1,13 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abhishek Bhandari</title>
+    <link rel="icon" href="assets/photo.jpg" class="img-fluid rounded-circle">
+    <link rel="stylesheet" href="sass/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>Hello, World Adding HTML Portfolio Here</h1>
-    Hello, World Adding HTML Portfolio Here
+
+    <header>
+
+        <nav id="navbar-example2" class="navbar navbar-expand-lg bg-light navbar-light shadow fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/photo.jpg" class="img-fluid rounded-circle me-2" width="80px" alt="">
+                    <h3>Abhishek Bhandari</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading3">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading4">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading5">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section id="hero">
+        <div class="container-fluid p-0">
+            <div class="hero-img">
+                <img src="assets/hero.png" class="img-fluid" alt="">
+                <div class="hero-overlay text-center d-none d-md-block">
+                    <h1>Hi There, I'm Abhishek Bhandari</h1>
+                    <p>(Java Backend Developer)</p>
+                    <a href="assets/resume.pdf" class="btn btn-success px-5 py-2 mt-4" download>Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-light rounded-2" tabindex="0">
+
+        <section id="section1" style="background: #f8f9fa;">
+            <div class="container" id="scrollspyHeading1">
+                <div class="row text-center pb-4">
+                    <h3>About me</h3>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 g-5 align-items-center">
+                    <div class="col">
+                        <div class="about-img text-center">
+                            <img src="assets/photo.jpg" class="img-fluid rounded-circle" width="400px" alt="">
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="about">
+                            <h2>Abhishek Bhandari</h2>
+                            <small>(Java Developer Engineering Graduate)</small>
+                            <ul class="nav d-block pt-4">
+                                <li class="nav-item">&#128151 I love working on projects and I am looking for more opportunities
+                                    to work in coding.</li>
+                                <li class="nav-item">&#128151 My leisure interest is playing chess</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2" style="background: #545454;">
+            <div class="container" id="scrollspyHeading2">
+                <div class="row pb-5 text-center text-light">
+                    <h3>Education</h3>
+                </div>
+                <div class="row justify-content-center g-5">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-image pt-3">
+                                <img src="assets/masai.png" width="100px" class="img-fluid rounded-circle shadow"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4>Masai School</h4>
+                                <small>(Full Stack Web Developer)</small>
+                                <ul class="nav pt-3">
+                                    <li class="nav-item">Holistic development</li>
+                                    <li class="nav-item">Backend & Frontend technologies</li>
+                                    <li class="nav-item">Collaborative projects</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-image pt-3">
+                                <img src="assets/hit.png" width="100px" class="img-fluid rounded-circle shadow" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4>Himalayan<br>Institute of Technology</h4>
+                                <small>(Bachelor of Computer Application)</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3" style="background: #f8f9fa;">
+            <div class="container" id="scrollspyHeading3">
+                <div class="row pb-5 text-center">
+                    <h3>Projects</h3>
+                </div>
+                <div class="row text-center justify-content-center g-5">
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/project1.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4>Better Clouds</h4>
+                                <a type="button" href="https://legendary-dango-0ff999.netlify.app/" target="_blank" class="btn btn-success px-4 py-1 mt-4 me-3">View</a>
+                                <a type="button" href="https://github.com/Rohit-M-Roy/BetterCloud-Clone" target="_blank" class="btn btn-warning px-4 py-1 mt-4">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/project2.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4>ESPN Cricinfo</h4>
+                                <a type="button" href="https://www.espncricinfo.com/" target="_blank" class="btn btn-success px-4 py-1 mt-4 me-3">View</a>
+                                <a type="button" href="https://github.com/sanketPaharia/tranquil-engine-3054/" target="_blank" class="btn btn-warning px-4 py-1 mt-4">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section4" style="background: #545454;">
+            <div class="container" id="scrollspyHeading4">
+                <div class="row text-center">
+                    <h3 class="text-light">Skill</h3>
+                    <h4 class="pb-4 pt-5 text-light">Backend Technologies</h4>
+                </div>
+                <div class="row row-cols-2 row-cols-md-4 g-5 text-center pb-5">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-image pt-3">
+                                <img src="assets/java.png" width="80px" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5>Java</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-image pt-3">
+                                <img src="assets/springboot.png" width="80px" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5>Springboot</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-image pt-3">
+                                <img src="assets/mysql.png" width="80px" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5>Mysql</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-image pt-3">
+                                <img src="assets/sql.png" width="80px" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5>SQL</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <h4 class="pb-4 pt-5 text-light">Frontend Technologies</h4>
+                </div>
+                <div class="row row-cols-2 row-cols-md-4 g-5 text-center pb-5">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-image pt-3">
+                                <img src="assets/JavaScript.png" width="80px" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5>JavaScript</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-image pt-3">
+                                <img src="assets/html.png" width="80px" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5>HTML</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-image pt-3">
+                                <img src="assets/css.png" width="80px" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5>CSS</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-image pt-3">
+                                <img src="assets/bootstrap.png" width="80px" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5>Bootstrap</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <h4 class="pb-4 pt-5 text-light">Other Tech Stack</h4>
+                </div>
+                <div class="row row-cols-2 row-cols-md-4 g-5 text-center">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-image pt-3">
+                                <img src="assets/git.png" width="80px" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5>Git</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-image pt-3">
+                                <img src="assets/intellij.png" width="80px" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5>Intellij</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-image pt-3">
+                                <img src="assets/vscode.png" width="80px" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5>VS Code</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-image pt-3">
+                                <img src="assets/eclipse.png" width="80px" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5>Eclipse</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section5">
+            <div class="container"  id="scrollspyHeading5">
+                <div class="row py-5 text-center">
+                    <h3>Get in touch</h3>
+                </div>
+                <div class="row text-center justify-content-center g-4">
+                    <div class="col-12 col-md-2">
+                        <a href="https://github.com/abhi-shek-bhandari" class="d-flex nav-link text-danger justify-content-center"><img src="assets/github.png" class="img-fluid me-2" width="25px" alt=""> abhi-shek-bhandari</a>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <a href="https://www.linkedin.com/in/bhandari-abhi/" class="d-flex nav-link text-danger justify-content-center"><img src="assets/linkedin.png" class="img-fluid me-2" width="25px" alt=""> bhandari-abhi</a>
+                    </div>
+                </div>
+                <div class="row text-center py-4">
+                    <p>Copyright © 2022 Abhishek Bhandari Contact : +91 9760944800 or Mail at : abhishekbhandarimail@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
