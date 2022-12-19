@@ -87,6 +87,10 @@ header .nav-link:hover {
   background-color: red;
 }/*# sourceMappingURL=main.css.map */
 
+.calendar{
+  width: 95%;
+}
+
 #calgitgraph{
   font-size: 62.5%;
 --color-calendar-graph-day-bg: #dddbdb;
