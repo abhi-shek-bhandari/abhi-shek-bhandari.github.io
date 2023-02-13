@@ -36,6 +36,13 @@ header .nav-link:hover {
 @-webkit-keyframes myHero {}
 
 @keyframes myHero {}
+
+@media screen and (max-width: 1000px) {
+  #hero .hero-img .hero-overlay {
+    top: 20%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   header .navbar {
     position: static;
