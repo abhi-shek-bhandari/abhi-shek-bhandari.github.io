@@ -41,6 +41,9 @@ header .nav-link:hover {
   #hero .hero-img .hero-overlay {
     top: 20%;
   }
+  #calgitgraph>img{
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 600px) {
