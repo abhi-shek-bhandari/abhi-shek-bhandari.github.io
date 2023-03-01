@@ -4,10 +4,17 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
 header .nav-link {
   color: #000000;
   border-radius: 5px;
@@ -23,8 +30,7 @@ header .nav-link:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  -webkit-animation: myHero 5s linear;
-          animation: myHero 5s linear;
+  animation: myHero 5s linear;
 }
 #hero .hero-img .hero-overlay h1 {
   color: #ffffff;
@@ -33,19 +39,23 @@ header .nav-link:hover {
   color: #ffffff;
 }
 
-@-webkit-keyframes myHero {}
-
-@keyframes myHero {}
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   #hero .hero-img .hero-overlay {
-    top: 20%;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: myHero 5s linear;
   }
-  #calgitgraph>img{
-    width: 95%;
+  #hero .hero-img .hero-overlay h1 {
+    color: #ffffff;
+  }
+  #hero .hero-img .hero-overlay p {
+    color: #ffffff;
   }
 }
-
+@keyframes myHero {}
 @media screen and (max-width: 600px) {
   header .navbar {
     position: static;
@@ -79,13 +89,25 @@ header .nav-link:hover {
   margin-bottom: 10px;
 }
 
-#section1, #section3, #section2, #section4, #section5 {
+#section1 .container,
+#section3 .container,
+#section2 .container,
+#section4 .container,
+#section5 .container {
   padding: 60px 0 100px 0;
 }
-#section1 h3, #section3 h3, #section2 h3, #section4 h3, #section5 h3 {
+#section1 .container h3,
+#section3 .container h3,
+#section2 .container h3,
+#section4 .container h3,
+#section5 .container h3 {
   font-size: 30px;
 }
-#section1 h3:after, #section3 h3:after, #section2 h3:after, #section4 h3:after, #section5 h3:after {
+#section1 .container h3:after,
+#section3 .container h3:after,
+#section2 .container h3:after,
+#section4 .container h3:after,
+#section5 .container h3:after {
   content: " ";
   display: flex;
   position: relative;
@@ -95,29 +117,13 @@ header .nav-link:hover {
   width: 70px;
   height: 3px;
   background-color: red;
+}
+@media screen and (max-width: 600px) {
+  #section1 .container,
+  #section3 .container,
+  #section2 .container,
+  #section4 .container,
+  #section5 .container {
+    padding: 50px 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
-
-.calendar{
-  width: 95%;
-}
-
-#calgitgraph{
-  font-size: 62.5%;
---color-calendar-graph-day-bg: #dddbdb;
---color-calendar-graph-day-L1-bg: #39dd34;
---color-calendar-graph-day-L2-bg: #45a045;
---color-calendar-graph-day-L3-bg: #047526;
---color-calendar-graph-day-L4-bg: #0a4208;
-font-family: "Poppins", sans-serif;
-color: #fff;
-text-align: center;
-padding: 0;
-box-sizing: border-box;
-text-decoration: none;
-outline: none;
-border: none;
-text-transform: capitalize;
-transition: all 0.2s linear;
-width: 90%;
-margin: 30px auto;
-}

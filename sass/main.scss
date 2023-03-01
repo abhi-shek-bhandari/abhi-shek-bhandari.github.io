@@ -4,15 +4,22 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
 }
 
 header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+
     .nav-link {
         color: #000000;
         border-radius: 5px;
     }
+
     .nav-link:hover {
         background: #0d6efd;
         color: #ffffff;
@@ -32,6 +39,7 @@ header {
             h1 {
                 color: #ffffff;
             }
+
             p {
                 color: #ffffff;
             }
@@ -39,9 +47,30 @@ header {
     }
 }
 
-@keyframes myHero {
-    
+@media screen and (max-width: 992px) {
+    #hero {
+        .hero-img {
+            .hero-overlay {
+                position: absolute;
+                top: 18%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                animation: myHero 5s linear;
+
+                h1 {
+                    color: #ffffff;
+                }
+
+                p {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
 }
+
+@keyframes myHero {}
 
 @media screen and (max-width: 600px) {
     header {
@@ -67,7 +96,8 @@ header {
 
 .card:hover {
     transform: scale(1.02);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    ;
 }
 
 #section1 {
@@ -87,21 +117,34 @@ header {
     }
 }
 
-#section1, #section3, #section2, #section4, #section5 {
-    padding: 60px 0 100px 0;
-    h3 {
-        font-size: 30px;
-    }
-    h3:after {
-        content: " ";
-        display: flex;
-        position: relative;
-        left: 50%;
-        top: 20%;
-        transform: translate(-50%, -80%);
-        width: 70px;
-        height: 3px;
-        background-color: red;
-    } 
-}
+#section1,
+#section3,
+#section2,
+#section4,
+#section5 {
+    .container {
+        padding: 60px 0 100px 0;
 
+        h3 {
+            font-size: 30px;
+        }
+
+        h3:after {
+            content: " ";
+            display: flex;
+            position: relative;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, -80%);
+            width: 70px;
+            height: 3px;
+            background-color: red;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .container {
+            padding: 50px 20px;
+        }
+    }
+}
